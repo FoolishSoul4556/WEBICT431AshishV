@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Booking - Sorrento by the Sea</title>
+    <link rel="stylesheet" type="text/css" href="Booking.css"/>
+    <link rel="stylesheet" type="text/javascript" href="Booking.js"/>
+</head>
+<body>
+    <div id="formbody">
+    <h2>Please fill the out form below to complete booking</h2>
+    <form action="Payment.html">
+        <div class="elem-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+        </div>
+        <div class="elem-group">
+            <label for="email">Your E-mail</label>
+            <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+        </div>
+        <div class="elem-group">
+            <label for="phone">Your Phone</label>
+            <input type="tel" id="phone" name="visitor_phone" placeholder="0498-348-387" pattern=(\d{4})-?\s?(\d{3})-?\s?(\d{3}) required>
+        </div>
+        <hr>
+        <div class="elem-group inlined">
+            <label for="adult">Adults</label>
+            <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+        </div>
+        <div class="elem-group inlined">
+            <label for="child">Children</label>
+            <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+        </div>
+        <div class="elem-group inlined">
+            <label for="checkin-date">Check-in Date</label>
+            <input type="date" id="checkin-date" name="checkin" required>
+        </div>
+        <div class="elem-group inlined">
+            <label for="checkout-date">Check-out Date</label>
+            <input type="date" id="checkout-date" name="checkout" required>
+        </div>
+        <hr>
+        <div class="elem-group">
+            <label for="message">Anything Else?</label>
+            <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
+        </div>
+        <button type="submit">Pay by Card</button>
+    </form>
+    <form action="https://www.paypal.com/au/signin">
+        <div class="button2">
+            <button type="submit">OR <img src="images/paypal_small.png" alt="PayPal Logo" /></button>
+        </div>
+    </form>
+    </div>
+    <footer>
+        <p class="footer">&copy;Sorrento by the Sea<a href="http://www.facebook.com/"><img src="images/facebook_small.png" alt="Facebook Logo"/></a> <a href="http://www.instagram.com/" ><img src="images/instagram_small.png" alt="Instagram Logo"/></a> <a href="http://www.twitter.com/"><img src="images/twitter_small.png" alt="Twitter Logo"/></a> <a href="https://www.youtube.com/"><img src="images/youtube-variation_small.png" alt="Youtube Logo"/></a></p>
+    </footer>
+</html>

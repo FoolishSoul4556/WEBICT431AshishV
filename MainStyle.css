@@ -1,0 +1,203 @@
+﻿    header {
+        background-color: #D48C70;
+    }
+
+    h2 {
+        color: #87423C;
+        font-size: 36px;
+    }
+
+    h3 {
+        color: #4d1d18;
+        font-size: 24px;
+    }
+
+
+    .logo { /*Original Colour Hex code: #B78D8A*/
+        margin: auto;
+        width: 960px;
+        height: 200px;
+    }
+
+    body {
+        background-color: #FFFDD1;
+    }
+
+    #section {
+        font-size: 16px;
+    }
+
+    .footer {
+        color: #87423c;
+        text-align: center;
+        padding: 10px;
+    }
+
+    footer {
+        background-color: #D48C70;
+        margin-top: auto;
+        width: 100%;
+        clear: both;
+    }
+
+    section {
+        clear: both;
+    }
+
+    #text-alignment {
+        vertical-align: middle;
+    }
+
+    /*Nav bar design*/
+    .navbar {
+        overflow: hidden;
+        background-color: #4d1d18;
+    }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+    .subnav {
+        float: left;
+        overflow: hidden;
+    }
+
+        .subnav .subnavbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .navbar a:hover, .subnav:hover .subnavbtn {
+            background-color: #555;
+        }
+
+    .subnav-content {
+        display: none;
+        position: absolute;
+        left: 0;
+        background-color: #87423C;
+        width: 100%;
+        z-index: 1;
+    }
+
+        .subnav-content a {
+            float: left;
+            color: white;
+            text-decoration: none;
+        }
+
+            .subnav-content a:hover {
+                background-color: #87423C;
+                color: black;
+            }
+
+    .subnav:hover .subnav-content {
+        display: block;
+    }
+
+    #active {
+        background-color: #87423C;
+    }
+
+    .columnL {
+        float: left;
+        width: 60%;
+        padding: 10px;
+    }
+
+.columnL2 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+    .columnR {
+        float: right;
+        width: auto;
+        padding: 15px;
+        margin-top: auto;
+    }
+
+    .columnR2 {
+        float:right
+    }
+
+
+    .rowH {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+
+    /*Interactive form CSS*/
+    input[type=submit], input[type=reset] {
+        width: 80px;
+        height: 25px;
+    }
+
+    input:focus, textarea:focus {
+        background-color: #c9d0de;
+    }
+
+.Map {
+    width: auto;
+    margin-top: auto;
+    margin-left: 800px;
+    border-style: solid;
+    border-color: #D48C70;
+}
+
+    /*CSS for the button (only used the pricing page)*/
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #87423C;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    vertical-align: middle;
+}
+
+    .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+
+        .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+    .button:hover span {
+        padding-right: 25px;
+    }
+
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
